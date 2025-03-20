@@ -6,13 +6,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        int b = sc.nextInt();
 
-        for(int i = 0; i < b; i++){
-
-            for(int j = 0; j < a; j++){
-                System.out.print("*");
+        for (int i = 0; i < a; ) {
+            for (int j = a; j > 0; j--) {
+                System.out.print(j);
             }
+            a--;
             System.out.println();
         }
     }
